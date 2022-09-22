@@ -1,0 +1,62 @@
+.slideshow-container {
+    margin: 10% 0 0 10%;
+    width: 960px;
+    height: 540px;
+    position: relative;
+}
+
+.slide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    width: 960px;
+    height: 540px;
+}
+
+.slide.display {
+    visibility: visible;
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #f9f9f9;
+    color: #292929;
+    top: 50%;
+    padding: 6px 12px;
+    opacity: 0.7;
+    cursor: grab;
+}
+
+.nextarrow {
+    right: 0;
+}
+
+.navdot {
+    position: absolute;
+    bottom: 12px;
+    right: 40%;
+}
+
+.dot {
+    background-color: #292929;
+    display: inline-block;
+    border: #f9f9f9 1px solid;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 12px;
+    cursor: grab;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #f9f9f9;
+    border: #292929 1px solid;
+}
