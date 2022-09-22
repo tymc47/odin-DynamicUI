@@ -36,7 +36,7 @@ const imageSlider = () => {
   dots[currentSlide].classList.toggle("active");
   nextSlide();
 
-  //   setInterval(nextSlide, 5000);
+  setInterval(nextSlide, 4000);
 };
 
 export default imageSlider;
